@@ -65,6 +65,57 @@ docker compose exec wordpress bash -c "php /var/www/html/wp-admin/includes/upgra
 ```
 (For regular WP-CLI usage you may add the `wordpress:cli` image or install wp-cli.phar inside a throwaway container.)
 
+## Pull-Based Deployment
+For production rollout on a server that can reach GitHub over outbound SSH/HTTPS, use `scripts/pull-deploy.sh`.
+
+The script:
+- fetches `origin/wordpress`
+- deploys only fast-forward changes
+- refuses to run if the checkout has tracked local edits
+- optionally runs `docker compose up -d` when runtime config changes
+- can run a post-deploy hook and HTTP healthcheck
+
+Example:
+```
+chmod +x scripts/pull-deploy.sh
+DEPLOY_BRANCH=wordpress \
+DEPLOY_REPO_DIR=/srv/rook-site/repo \
+DEPLOY_HEALTHCHECK_URL=https://example.com/ \
+DEPLOY_POST_PULL_HOOK='docker compose exec -T wordpress php -r "if (function_exists(\"opcache_reset\")) { opcache_reset(); }"' \
+./scripts/pull-deploy.sh
+```
+
+Suggested systemd service:
+```ini
+[Unit]
+Description=Pull and deploy RooK WordPress updates
+After=docker.service network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/srv/rook-site/repo
+Environment=DEPLOY_BRANCH=wordpress
+Environment=DEPLOY_REPO_DIR=/srv/rook-site/repo
+ExecStart=/srv/rook-site/repo/scripts/pull-deploy.sh
+```
+
+Suggested timer:
+```ini
+[Unit]
+Description=Check for RooK WordPress updates
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=2min
+Unit=rook-wordpress-deploy.service
+
+[Install]
+WantedBy=timers.target
+```
+
+Keep `docroot/wp-content/uploads`, database storage, and secrets outside git-controlled state on the server so pulls stay fast-forwardable.
+
 ## Notes
 - Using the official image simplifies extension management (mysqli, pdo_mysql already present).
 - If you need Xdebug, you'll have to allow either a custom Dockerfile or a sidecar container proxy pattern.
