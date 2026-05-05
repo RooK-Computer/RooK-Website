@@ -116,6 +116,25 @@ WantedBy=timers.target
 
 Keep `docroot/wp-content/uploads`, database storage, and secrets outside git-controlled state on the server so pulls stay fast-forwardable.
 
+## Database Dumps
+To let the production site user create a downloadable database snapshot without exposing DB credentials on the host, use `scripts/create-db-dump.sh`.
+
+The script:
+- talks to the running `db` container through `docker compose exec`
+- uses the container's `MARIADB_*` environment variables
+- writes a timestamped `.sql.gz` file outside the repo checkout by default
+- prevents concurrent dump creation with `flock`
+
+Example:
+```
+chmod +x scripts/create-db-dump.sh
+DUMP_REPO_DIR=/srv/rook-site/repo \
+DUMP_OUTPUT_DIR=/srv/rook-site/dumps \
+./scripts/create-db-dump.sh
+```
+
+The command prints the full path to the created dump so a developer can download it with `scp` afterwards.
+
 ## Notes
 - Using the official image simplifies extension management (mysqli, pdo_mysql already present).
 - If you need Xdebug, you'll have to allow either a custom Dockerfile or a sidecar container proxy pattern.
