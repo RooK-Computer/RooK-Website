@@ -59,3 +59,8 @@ h1, h2, h3, h4, h5, h6, blockquote, caption, figcaption, p {
 .more-link {
 	display: block;
 }
+
+nav.with-bar .wp-block-navigation-item::after {
+  content: "|";
+  margin-inline-start: var(--wp--style--block-gap);
+}
