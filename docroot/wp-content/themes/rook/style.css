@@ -15,3 +15,12 @@ Text Domain: rook
 Tags: 
 */
 
+/* temp styling! we will use theme.json! */
+nav.with-bar .wp-block-navigation-item:after {
+    content: "|";
+    margin-inline-start: var(--wp--style--block-gap);
+}
+
+nav.with-bar .wp-block-navigation-item:last-child:after {
+    content: "";
+}
