@@ -2,3 +2,7 @@ db_data
 docroot/wp-content/uploads
 /.env
 
+/nix-config
+/mysql_db.nix
+/logs
+/.butler-sandbox
