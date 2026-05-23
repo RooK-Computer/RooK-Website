@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Create Block Theme - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-08-04 11:58:57+0000\n"
+"PO-Revision-Date: 2026-05-13 16:49:45+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -11,13 +11,13 @@ msgstr ""
 "Language: de\n"
 "Project-Id-Version: Plugins - Create Block Theme - Stable (latest release)\n"
 
-#: includes/class-create-block-theme-api.php:243
-msgid "Theme Variation Created."
-msgstr "Theme-Variation angelegt."
-
 #: includes/class-create-block-theme-api.php:218
 msgid "Child Theme Created."
 msgstr "Child-Theme erstellt."
+
+#: includes/class-create-block-theme-api.php:243
+msgid "Theme Variation Created."
+msgstr "Theme-Variation angelegt."
 
 #: includes/create-theme/theme-json.php:20
 msgid "Variation already exists."
@@ -31,6 +31,23 @@ msgstr "Individuelle Schlagwörter"
 msgid "read more"
 msgstr "weiterlesen"
 
+#: includes/create-theme/theme-tags.php:47 build/plugin-sidebar.js:10
+msgid "https://make.wordpress.org/themes/handbook/review/required/theme-tags/"
+msgstr "https://make.wordpress.org/themes/handbook/review/required/theme-tags/"
+
+#: includes/create-theme/theme-tags.php:87
+msgid "(max 3 tags)"
+msgstr "(max. 3 Schlagwörter)"
+
+#: includes/create-theme/theme-tags.php:37
+msgid "Theme Tags"
+msgstr "Theme-Schlagwörter"
+
+#. Translators: Theme Tags link.
+#: includes/create-theme/theme-tags.php:43
+msgid "Add theme tags to help categorize the theme (%s)."
+msgstr "Füge Theme-Schlagwörter hinzu, um das Theme zu kategorisieren (%s)."
+
 #: includes/create-theme/theme-tags.php:69
 msgid "custom, tags, custom-tags"
 msgstr "individuell, Schlagwörter, individuelle-Schlagwörter"
@@ -38,23 +55,6 @@ msgstr "individuell, Schlagwörter, individuelle-Schlagwörter"
 #: includes/create-theme/theme-tags.php:72
 msgid "Add custom tags (single or hyphenated words, separated by commas)"
 msgstr "Füge individuelle Schlagwörter hinzu (einzelne Wörter oder Wörter mit Bindestrich, durch Komma getrennt)"
-
-#: includes/create-theme/theme-tags.php:87
-msgid "(max 3 tags)"
-msgstr "(max. 3 Schlagwörter)"
-
-#: includes/create-theme/theme-tags.php:47 build/plugin-sidebar.js:10
-msgid "https://make.wordpress.org/themes/handbook/review/required/theme-tags/"
-msgstr "https://make.wordpress.org/themes/handbook/review/required/theme-tags/"
-
-#. Translators: Theme Tags link.
-#: includes/create-theme/theme-tags.php:43
-msgid "Add theme tags to help categorize the theme (%s)."
-msgstr "Füge Theme-Schlagwörter hinzu, um das Theme zu kategorisieren (%s)."
-
-#: includes/create-theme/theme-tags.php:37
-msgid "Theme Tags"
-msgstr "Theme-Schlagwörter"
 
 #. Plugin URI of the plugin
 #: create-block-theme.php
@@ -66,11 +66,6 @@ msgstr "https://de.wordpress.org/plugins/create-block-theme"
 msgctxt "UI String"
 msgid "Create Block Theme"
 msgstr "Block-Theme erstellen"
-
-#: assets/boilerplate/theme.json
-msgctxt "Font family name"
-msgid "System Font"
-msgstr "System-Schrift"
 
 #. Author URI of the plugin
 #: create-block-theme.php build/plugin-sidebar.js:1 build/plugin-sidebar.js:10
@@ -92,3 +87,8 @@ msgstr "Erstellt ein Block-Theme"
 #: build/plugin-sidebar.js:11
 msgid "Create Block Theme"
 msgstr "Create Block Theme"
+
+#: assets/boilerplate/theme.json
+msgctxt "Font family name"
+msgid "System Font"
+msgstr "Systemschrift"

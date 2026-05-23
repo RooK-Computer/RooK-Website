@@ -1,4 +1,15 @@
 
+# Get images from Prod
+# http://issue49.palasthotel.de/blog/2015/08/13/alle-bilder-auf-der-dev-umgebung/
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} ^/wp-content/uploads/.*$
+RewriteRule ^wp-content/uploads/(.*)$ https://wp-sandbox.rook.computer/wp-content/uploads/$1 [L,R=301]
+</IfModule>
+
 # BEGIN WordPress
 # The directives (lines) between "BEGIN WordPress" and "END WordPress" are
 # dynamically generated, and should only be modified via WordPress filters.
