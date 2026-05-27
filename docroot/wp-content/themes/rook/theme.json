@@ -1,4 +1,121 @@
 {
 	"$schema": "https://schemas.wp.org/wp/6.9/theme.json",
-	"version": 3
+	"version": 3,
+	"settings": {
+		"color": {
+			"defaultDuotone": false,
+			"defaultGradients": false,
+			"defaultPalette": false,
+			"palette": [
+				{
+					"color": "#FFFFFF",
+					"name": "Base",
+					"slug": "base"
+				},
+				{
+					"color": "#111111",
+					"name": "Contrast",
+					"slug": "contrast"
+				},
+				{
+					"color": "#ffea00",
+					"name": "Yellow",
+					"slug": "yellow"
+				},
+				{
+					"color": "#b200ff",
+					"name": "Purple",
+					"slug": "purple"
+				}
+			]
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"name": "Berkeley Mono",
+					"slug": "berkeley-mono",
+					"fontFamily": "\"Berkeley Mono\", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
+					"fontFace": [
+						{
+							"fontFamily": "Berkeley Mono",
+							"fontStyle": "normal",
+							"fontWeight": "300",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/berkeley-mono/BerkeleyMono-Light.woff2"
+							]
+						},
+						{
+							"fontFamily": "Berkeley Mono",
+							"fontStyle": "oblique",
+							"fontWeight": "300",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/berkeley-mono/BerkeleyMono-Light-Oblique.woff2"
+							]
+						},
+						{
+							"fontFamily": "Berkeley Mono",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/berkeley-mono/BerkeleyMono-Regular.woff2"
+							]
+						},
+						{
+							"fontFamily": "Berkeley Mono",
+							"fontStyle": "oblique",
+							"fontWeight": "400",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/berkeley-mono/BerkeleyMono-Oblique.woff2"
+							]
+						},
+						{
+							"fontFamily": "Berkeley Mono",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/berkeley-mono/BerkeleyMono-Medium.woff2"
+							]
+						},
+						{
+							"fontFamily": "Berkeley Mono",
+							"fontStyle": "oblique",
+							"fontWeight": "500",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/berkeley-mono/BerkeleyMono-Medium-Oblique.woff2"
+							]
+						},
+						{
+							"fontFamily": "Berkeley Mono",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/berkeley-mono/BerkeleyMono-Bold.woff2"
+							]
+						},
+						{
+							"fontFamily": "Berkeley Mono",
+							"fontStyle": "oblique",
+							"fontWeight": "700",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/berkeley-mono/BerkeleyMono-Bold-Oblique.woff2"
+							]
+						}
+					]
+				}
+			]
+		}
+
+
+	},
+	"styles": {
+
+	}
 }
