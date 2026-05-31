@@ -108,7 +108,8 @@
 	},
 	"styles": {
 		"typography": {
-			"fontFamily": "var:preset|font-family|iosevka-aile"
+			"fontFamily": "var:preset|font-family|iosevka-aile",
+			"fontWeight": "400"
 		}
 	}
 }
