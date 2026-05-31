@@ -32,81 +32,72 @@
 		"typography": {
 			"fontFamilies": [
 				{
-					"name": "Berkeley Mono",
-					"slug": "berkeley-mono",
-					"fontFamily": "\"Berkeley Mono\", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
+					"name": "Iosevka Aile",
+					"slug": "iosevka-aile",
+					"fontFamily": "'Iosevka Aile', sans-serif",
 					"fontFace": [
 						{
-							"fontFamily": "Berkeley Mono",
+							"fontFamily": "Iosevka Aile",
+							"fontStyle": "normal",
+							"fontWeight": "100",
+							"fontDisplay": "swap",
+							"src": ["file:./assets/fonts/IosevkaAile-Thin.ttc"]
+						},
+						{
+							"fontFamily": "Iosevka Aile",
+							"fontStyle": "normal",
+							"fontWeight": "200",
+							"fontDisplay": "swap",
+							"src": ["file:./assets/fonts/IosevkaAile-ExtraLight.ttc"]
+						},
+						{
+							"fontFamily": "Iosevka Aile",
 							"fontStyle": "normal",
 							"fontWeight": "300",
 							"fontDisplay": "swap",
-							"src": [
-								"file:./assets/fonts/berkeley-mono/BerkeleyMono-Light.woff2"
-							]
+							"src": ["file:./assets/fonts/IosevkaAile-Light.ttc"]
 						},
 						{
-							"fontFamily": "Berkeley Mono",
-							"fontStyle": "oblique",
-							"fontWeight": "300",
-							"fontDisplay": "swap",
-							"src": [
-								"file:./assets/fonts/berkeley-mono/BerkeleyMono-Light-Oblique.woff2"
-							]
-						},
-						{
-							"fontFamily": "Berkeley Mono",
+							"fontFamily": "Iosevka Aile",
 							"fontStyle": "normal",
 							"fontWeight": "400",
 							"fontDisplay": "swap",
-							"src": [
-								"file:./assets/fonts/berkeley-mono/BerkeleyMono-Regular.woff2"
-							]
+							"src": ["file:./assets/fonts/IosevkaAile-Regular.ttc"]
 						},
 						{
-							"fontFamily": "Berkeley Mono",
-							"fontStyle": "oblique",
-							"fontWeight": "400",
-							"fontDisplay": "swap",
-							"src": [
-								"file:./assets/fonts/berkeley-mono/BerkeleyMono-Oblique.woff2"
-							]
-						},
-						{
-							"fontFamily": "Berkeley Mono",
+							"fontFamily": "Iosevka Aile",
 							"fontStyle": "normal",
 							"fontWeight": "500",
 							"fontDisplay": "swap",
-							"src": [
-								"file:./assets/fonts/berkeley-mono/BerkeleyMono-Medium.woff2"
-							]
+							"src": ["file:./assets/fonts/IosevkaAile-Medium.ttc"]
 						},
 						{
-							"fontFamily": "Berkeley Mono",
-							"fontStyle": "oblique",
-							"fontWeight": "500",
+							"fontFamily": "Iosevka Aile",
+							"fontStyle": "normal",
+							"fontWeight": "600",
 							"fontDisplay": "swap",
-							"src": [
-								"file:./assets/fonts/berkeley-mono/BerkeleyMono-Medium-Oblique.woff2"
-							]
+							"src": ["file:./assets/fonts/IosevkaAile-SemiBold.ttc"]
 						},
 						{
-							"fontFamily": "Berkeley Mono",
+							"fontFamily": "Iosevka Aile",
 							"fontStyle": "normal",
 							"fontWeight": "700",
 							"fontDisplay": "swap",
-							"src": [
-								"file:./assets/fonts/berkeley-mono/BerkeleyMono-Bold.woff2"
-							]
+							"src": ["file:./assets/fonts/IosevkaAile-Bold.ttc"]
 						},
 						{
-							"fontFamily": "Berkeley Mono",
-							"fontStyle": "oblique",
-							"fontWeight": "700",
+							"fontFamily": "Iosevka Aile",
+							"fontStyle": "normal",
+							"fontWeight": "800",
 							"fontDisplay": "swap",
-							"src": [
-								"file:./assets/fonts/berkeley-mono/BerkeleyMono-Bold-Oblique.woff2"
-							]
+							"src": ["file:./assets/fonts/IosevkaAile-ExtraBold.ttc"]
+						},
+						{
+							"fontFamily": "Iosevka Aile",
+							"fontStyle": "normal",
+							"fontWeight": "900",
+							"fontDisplay": "swap",
+							"src": ["file:./assets/fonts/IosevkaAile-Heavy.ttc"]
 						}
 					]
 				}
@@ -116,6 +107,8 @@
 
 	},
 	"styles": {
-
+		"typography": {
+			"fontFamily": "var:preset|font-family|iosevka-aile"
+		}
 	}
 }
