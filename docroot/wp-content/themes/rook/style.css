@@ -26,5 +26,5 @@ nav.with-bar .wp-block-navigation-item:last-child:after {
 }
 
 .fixed-height-800 * {
-    height: 800px;
+    height: 800px !important;
 }
