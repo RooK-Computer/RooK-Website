@@ -7,7 +7,7 @@ RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_URI} ^/wp-content/uploads/.*$
-RewriteRule ^wp-content/uploads/(.*)$ https://wp-sandbox.rook.computer/wp-content/uploads/$1 [L,R=301]
+RewriteRule ^wp-content/uploads/(.*)$ https://rook.computer/wp-content/uploads/$1 [L,R=301]
 </IfModule>
 
 # BEGIN WordPress
