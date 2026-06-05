@@ -1,115 +1,182 @@
 {
-	"$schema": "https://schemas.wp.org/wp/6.9/theme.json",
-	"version": 3,
-	"settings": {
-		"color": {
-			"defaultDuotone": false,
-			"defaultGradients": false,
-			"defaultPalette": false,
-			"palette": [
-				{
-					"color": "#FFFFFF",
-					"name": "Base",
-					"slug": "base"
-				},
-				{
-					"color": "#111111",
-					"name": "Contrast",
-					"slug": "contrast"
-				},
-				{
-					"color": "#ffea00",
-					"name": "Yellow",
-					"slug": "yellow"
-				},
-				{
-					"color": "#b200ff",
-					"name": "Purple",
-					"slug": "purple"
-				}
-			]
-		},
-		"typography": {
-			"fontFamilies": [
-				{
-					"name": "Iosevka Aile",
-					"slug": "iosevka-aile",
-					"fontFamily": "'Iosevka Aile', sans-serif",
-					"fontFace": [
-						{
-							"fontFamily": "Iosevka Aile",
-							"fontStyle": "normal",
-							"fontWeight": "100",
-							"fontDisplay": "swap",
-							"src": ["file:./assets/fonts/IosevkaAile-Thin.ttc"]
-						},
-						{
-							"fontFamily": "Iosevka Aile",
-							"fontStyle": "normal",
-							"fontWeight": "200",
-							"fontDisplay": "swap",
-							"src": ["file:./assets/fonts/IosevkaAile-ExtraLight.ttc"]
-						},
-						{
-							"fontFamily": "Iosevka Aile",
-							"fontStyle": "normal",
-							"fontWeight": "300",
-							"fontDisplay": "swap",
-							"src": ["file:./assets/fonts/IosevkaAile-Light.ttc"]
-						},
-						{
-							"fontFamily": "Iosevka Aile",
-							"fontStyle": "normal",
-							"fontWeight": "400",
-							"fontDisplay": "swap",
-							"src": ["file:./assets/fonts/IosevkaAile-Regular.ttc"]
-						},
-						{
-							"fontFamily": "Iosevka Aile",
-							"fontStyle": "normal",
-							"fontWeight": "500",
-							"fontDisplay": "swap",
-							"src": ["file:./assets/fonts/IosevkaAile-Medium.ttc"]
-						},
-						{
-							"fontFamily": "Iosevka Aile",
-							"fontStyle": "normal",
-							"fontWeight": "600",
-							"fontDisplay": "swap",
-							"src": ["file:./assets/fonts/IosevkaAile-SemiBold.ttc"]
-						},
-						{
-							"fontFamily": "Iosevka Aile",
-							"fontStyle": "normal",
-							"fontWeight": "700",
-							"fontDisplay": "swap",
-							"src": ["file:./assets/fonts/IosevkaAile-Bold.ttc"]
-						},
-						{
-							"fontFamily": "Iosevka Aile",
-							"fontStyle": "normal",
-							"fontWeight": "800",
-							"fontDisplay": "swap",
-							"src": ["file:./assets/fonts/IosevkaAile-ExtraBold.ttc"]
-						},
-						{
-							"fontFamily": "Iosevka Aile",
-							"fontStyle": "normal",
-							"fontWeight": "900",
-							"fontDisplay": "swap",
-							"src": ["file:./assets/fonts/IosevkaAile-Heavy.ttc"]
-						}
-					]
-				}
-			]
-		}
-
-
-	},
-	"styles": {
-		"typography": {
-			"fontFamily": "var:preset|font-family|iosevka-aile",
-			"fontWeight": "400"
-		}
-	}
+  "$schema": "https://schemas.wp.org/wp/6.9/theme.json",
+  "version": 3,
+  "settings": {
+    "color": {
+      "defaultDuotone": false,
+      "defaultGradients": false,
+      "defaultPalette": false,
+      "palette": [
+        {
+          "color": "#FFFFFF",
+          "name": "Base",
+          "slug": "base"
+        },
+        {
+          "color": "#111111",
+          "name": "Contrast",
+          "slug": "contrast"
+        },
+        {
+          "color": "#ffea00",
+          "name": "Yellow",
+          "slug": "yellow"
+        },
+        {
+          "color": "#b200ff",
+          "name": "Purple",
+          "slug": "purple"
+        }
+      ]
+    },
+    "typography": {
+      "fontFamilies": [
+        {
+          "name": "Iosevka Rook",
+          "slug": "iosevka-rook",
+          "fontFamily": "'Iosevka Rook', sans-serif",
+          "fontFace": [
+            {
+              "fontFamily": "Iosevka Rook",
+              "fontStyle": "normal",
+              "fontStretch": "normal",
+              "fontWeight": "400",
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/IosevkaRook/WOFF2/IosevkaRook-Regular.woff2",
+                "file:./assets/fonts/IosevkaRook/TTF/IosevkaRook-Regular.ttf"
+              ]
+            },
+            {
+              "fontFamily": "Iosevka Rook",
+              "fontStyle": "normal",
+              "fontStretch": "expanded",
+              "fontWeight": "400",
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/IosevkaRook/WOFF2/IosevkaRook-Extended.woff2",
+                "file:./assets/fonts/IosevkaRook/TTF/IosevkaRook-Extended.ttf"
+              ]
+            },
+            {
+              "fontFamily": "Iosevka Rook",
+              "fontStyle": "italic",
+              "fontStretch": "normal",
+              "fontWeight": "400",
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/IosevkaRook/WOFF2/IosevkaRook-Italic.woff2",
+                "file:./assets/fonts/IosevkaRook/TTF/IosevkaRook-Italic.ttf"
+              ]
+            },
+            {
+              "fontFamily": "Iosevka Rook",
+              "fontStyle": "normal",
+              "fontStretch": "expanded",
+              "fontWeight": "400",
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/IosevkaRook/WOFF2/IosevkaRook-ExtendedItalic.woff2",
+                "file:./assets/fonts/IosevkaRook/TTF/IosevkaRook-ExtendedItalic.ttf"
+              ]
+            },
+            {
+              "fontFamily": "Iosevka Rook",
+              "fontStyle": "normal",
+              "fontStretch": "normal",
+              "fontWeight": "700",
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/IosevkaRook/WOFF2/IosevkaRook-Bold.woff2",
+                "file:./assets/fonts/IosevkaRook/TTF/IosevkaRook-Bold.ttf"
+              ]
+            },
+            {
+              "fontFamily": "Iosevka Rook",
+              "fontStyle": "normal",
+              "fontStretch": "expanded",
+              "fontWeight": "700",
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/IosevkaRook/WOFF2/IosevkaRook-ExtendedBold.woff2",
+                "file:./assets/fonts/IosevkaRook/TTF/IosevkaRook-ExtendedBold.ttf"
+              ]
+            },
+            {
+              "fontFamily": "Iosevka Rook",
+              "fontStyle": "italic",
+              "fontStretch": "normal",
+              "fontWeight": "700",
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/IosevkaRook/WOFF2/IosevkaRook-BoldItalic.woff2",
+                "file:./assets/fonts/IosevkaRook/TTF/IosevkaRook-BoldItalic.ttf"
+              ]
+            },
+            {
+              "fontFamily": "Iosevka Rook",
+              "fontStyle": "italic",
+              "fontStretch": "expanded",
+              "fontWeight": "700",
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/IosevkaRook/WOFF2/IosevkaRook-ExtendedBoldItalic.woff2",
+                "file:./assets/fonts/IosevkaRook/TTF/IosevkaRook-ExtendedBoldItalic.ttf"
+              ]
+            },
+            {
+              "fontFamily": "Iosevka Rook",
+              "fontStyle": "normal",
+              "fontStretch": "normal",
+              "fontWeight": "600",
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/IosevkaRook/WOFF2/IosevkaRook-SemiBold.woff2",
+                "file:./assets/fonts/IosevkaRook/TTF/IosevkaRook-SemiBold.ttf"
+              ]
+            },
+            {
+              "fontFamily": "Iosevka Rook",
+              "fontStyle": "expanded",
+              "fontStretch": "normal",
+              "fontWeight": "600",
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/IosevkaRook/WOFF2/IosevkaRook-ExtendedSemiBold.woff2",
+                "file:./assets/fonts/IosevkaRook/TTF/IosevkaRook-ExtendedSemiBold.ttf"
+              ]
+            },
+            {
+              "fontFamily": "Iosevka Rook",
+              "fontStyle": "italic",
+              "fontStretch": "normal",
+              "fontWeight": "600",
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/IosevkaRook/WOFF2/IosevkaRook-SemiBoldItalic.woff2",
+                "file:./assets/fonts/IosevkaRook/TTF/IosevkaRook-SemiBoldItalic.ttf"
+              ]
+            },
+            {
+              "fontFamily": "Iosevka Rook",
+              "fontStyle": "italic",
+              "fontStretch": "expanded",
+              "fontWeight": "600",
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/IosevkaRook/WOFF2/IosevkaRook-ExtendedSemiBoldItalic.woff2",
+                "file:./assets/fonts/IosevkaRook/TTF/IosevkaRook-ExtendedSemiBoldItalic.ttf"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "styles": {
+    "typography": {
+      "fontFamily": "var:preset|font-family|iosevka-rook",
+      "fontWeight": "400"
+    }
+  }
 }
