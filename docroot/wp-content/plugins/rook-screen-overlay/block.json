@@ -1,0 +1,128 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "rook/screen-overlay",
+  "version": "1.2.2",
+  "title": "Bild-auf-Bild",
+  "category": "rook",
+  "icon": "format-image",
+  "description": "Zeigt ein responsives Hintergrundbild mit proportional positioniertem Bild- oder GIF-Overlay sowie frei platzierbaren Gutenberg-Blöcken darüber.",
+  "keywords": [
+    "screen",
+    "bildschirm",
+    "gif",
+    "overlay",
+    "text",
+    "rook"
+  ],
+  "textdomain": "rook-screen-overlay",
+  "attributes": {
+    "align": {
+      "type": "string"
+    },
+    "backgroundId": {
+      "type": "number"
+    },
+    "backgroundUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "backgroundAlt": {
+      "type": "string",
+      "default": ""
+    },
+    "backgroundWidth": {
+      "type": "number",
+      "default": 0
+    },
+    "backgroundHeight": {
+      "type": "number",
+      "default": 0
+    },
+    "useViewportMaxHeight": {
+      "type": "boolean",
+      "default": false
+    },
+    "viewportMaxHeight": {
+      "type": "number",
+      "default": 100
+    },
+    "displayId": {
+      "type": "number"
+    },
+    "displayUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "displayAlt": {
+      "type": "string",
+      "default": ""
+    },
+    "displayLeft": {
+      "type": "number",
+      "default": 38.3
+    },
+    "displayTop": {
+      "type": "number",
+      "default": 34
+    },
+    "displayWidth": {
+      "type": "number",
+      "default": 16
+    },
+    "displayHeight": {
+      "type": "number",
+      "default": 18
+    },
+    "objectFit": {
+      "type": "string",
+      "default": "cover"
+    },
+    "displayBorderRadius": {
+      "type": "number",
+      "default": 0
+    },
+    "contentLeft": {
+      "type": "number",
+      "default": 0
+    },
+    "contentTop": {
+      "type": "number",
+      "default": 0
+    },
+    "contentWidth": {
+      "type": "number",
+      "default": 100
+    },
+    "contentHeight": {
+      "type": "number",
+      "default": 100
+    },
+    "contentPadding": {
+      "type": "number",
+      "default": 0
+    },
+    "contentVerticalAlign": {
+      "type": "string",
+      "default": "center"
+    },
+    "contentZIndex": {
+      "type": "number",
+      "default": 3
+    }
+  },
+  "supports": {
+    "align": [
+      "wide",
+      "full"
+    ],
+    "anchor": true,
+    "html": false,
+    "spacing": {
+      "margin": true
+    }
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style.css",
+  "editorStyle": "file:./editor.css"
+}

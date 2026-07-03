@@ -1,0 +1,107 @@
+.wp-block-rook-screen-overlay.rook-screen-overlay {
+	--rook-display-left: 38.3%;
+	--rook-display-top: 34%;
+	--rook-display-width: 16%;
+	--rook-display-height: 18%;
+	--rook-display-fit: cover;
+	--rook-display-radius: 0px;
+	--rook-content-left: 0%;
+	--rook-content-top: 0%;
+	--rook-content-width: 100%;
+	--rook-content-height: 100%;
+	--rook-content-padding: 0px;
+	--rook-content-vertical-align: center;
+	--rook-display-z-index: 2;
+	--rook-content-z-index: 3;
+	--rook-background-max-height: 100vh;
+	--rook-background-max-width: 100%;
+
+	position: relative;
+	box-sizing: border-box;
+	width: 100%;
+	min-width: 0;
+	max-width: none;
+	margin-block: 0;
+	overflow: hidden;
+	line-height: 0;
+	isolation: isolate;
+}
+
+/*
+ * Optionaler Höhen-Cap: Die Breite wird aus dem gespeicherten Seitenverhältnis
+ * abgeleitet. So bleiben Display- und Inhalts-Overlays proportional am Bild.
+ */
+.wp-block-rook-screen-overlay.rook-screen-overlay.has-rook-viewport-max-height {
+	width: min(100%, var(--rook-background-max-width));
+	margin-inline: auto;
+}
+
+.wp-block-rook-screen-overlay.rook-screen-overlay.has-rook-viewport-max-height .rook-screen-overlay__background img {
+	max-height: var(--rook-background-max-height);
+}
+
+.rook-screen-overlay__background {
+	display: block;
+	width: 100%;
+	margin: 0;
+}
+
+.rook-screen-overlay__background img {
+	display: block;
+	width: 100%;
+	height: auto;
+	margin: 0;
+}
+
+.rook-screen-overlay__display {
+	position: absolute;
+	z-index: var(--rook-display-z-index);
+	left: var(--rook-display-left);
+	top: var(--rook-display-top);
+	width: var(--rook-display-width);
+	height: var(--rook-display-height);
+	margin: 0;
+	overflow: hidden;
+	border-radius: var(--rook-display-radius);
+	line-height: 0;
+	pointer-events: none;
+}
+
+.rook-screen-overlay__display img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	object-fit: var(--rook-display-fit);
+}
+
+/* Gutenberg-Inhalte liegen in einer frei einstellbaren absoluten Ebene. */
+.rook-screen-overlay__content {
+	position: absolute;
+	z-index: var(--rook-content-z-index);
+	left: var(--rook-content-left);
+	top: var(--rook-content-top);
+	display: flex;
+	flex-direction: column;
+	justify-content: var(--rook-content-vertical-align);
+	box-sizing: border-box;
+	width: var(--rook-content-width);
+	height: var(--rook-content-height);
+	padding: var(--rook-content-padding);
+	line-height: normal;
+	pointer-events: none;
+}
+
+.rook-screen-overlay__content > * {
+	box-sizing: border-box;
+	width: 100%;
+	pointer-events: auto;
+}
+
+.rook-screen-overlay__content > :first-child {
+	margin-top: 0;
+}
+
+.rook-screen-overlay__content > :last-child {
+	margin-bottom: 0;
+}
