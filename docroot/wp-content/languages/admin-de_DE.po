@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 7.0.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-05-22 13:03:20+0000\n"
+"PO-Revision-Date: 2026-06-29 19:10:09+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -5883,7 +5883,7 @@ msgstr "Du bist leider nicht berechtigt, die Ausführung dieses Plugins fortzuse
 #. translators: %s: WordPress Planet URL.
 #: wp-admin/index.php:97
 msgid "<strong>WordPress Events and News</strong> &mdash; Upcoming events near you as well as the latest news from the official WordPress project and the <a href=\"%s\">WordPress Planet</a>."
-msgstr "<strong>WordPress-Veranstaltungen und Neuigkeiten</strong> &ndash; Beinhaltet kommende Veranstaltungen in deiner Nähe sowie die neuesten Nachrichten aus dem offiziellen WordPress-Projekt und dem <a href=\"%s\">WordPress Planet</a>."
+msgstr "<strong>WordPress-Veranstaltungen und Neuigkeiten</strong> &ndash; Beinhaltet bevorstehende Veranstaltungen in deiner Nähe sowie die neuesten Nachrichten aus dem offiziellen WordPress-Projekt und dem <a href=\"%s\">WordPress Planet</a>."
 
 #. translators: 1: URL to WordPress release notes, 2: WordPress version number,
 #. 3: Minimum required MySQL version number, 4: Current MySQL version number.
@@ -7688,7 +7688,7 @@ msgstr "%s wurde erfolgreich gelöscht."
 #. translators: 1: URL to WordPress release notes, 2: New WordPress version.
 #: wp-admin/includes/update.php:337
 msgid "<a href=\"%1$s\">WordPress %2$s</a> is available! Please notify the site administrator."
-msgstr "<a href=\"%1$s\">WordPress %2$s</a> ist verfügbar! Bitte informiere den Administrator."
+msgstr "<a href=\"%1$s\">WordPress %2$s</a> ist verfügbar! Bitte informiere den Website-Administrator."
 
 #: wp-admin/includes/update.php:332
 msgid "Please update WordPress now"
@@ -7738,7 +7738,7 @@ msgstr "Footer-Widgets"
 
 #: wp-admin/includes/theme.php:352
 msgid "Grid Layout"
-msgstr "Raster-Layout"
+msgstr "Rasterlayout"
 
 #: wp-admin/includes/template.php:2729
 msgid "This will replace the current editor content with the last backup version. You can use undo and redo in the editor to get the old content back or to return to the restored version."
@@ -8556,7 +8556,7 @@ msgstr "Linkliste"
 #. translators: %s: WordPress version.
 #: wp-admin/includes/update.php:284
 msgid "Get Version %s"
-msgstr "Version %s herunterladen"
+msgstr "Version %s beziehen"
 
 #. translators: %s: Hidden accessibility text. Meta box title.
 #: wp-admin/includes/template.php:1429
@@ -9239,8 +9239,8 @@ msgid ""
 "UPDATE LOG\n"
 "=========="
 msgstr ""
-"AKTUALISIERUNGS-PROTOKOLL\n"
-"=========================="
+"AKTUALISIERUNGSPROTOKOLL\n"
+"===================="
 
 #: wp-admin/includes/class-wp-automatic-updater.php:1642
 msgid ""
@@ -10094,7 +10094,7 @@ msgstr "[%1$s] WordPress %2$s ist verfügbar. Bitte aktualisieren!"
 #. WordPress version.
 #: wp-admin/includes/class-wp-automatic-updater.php:950
 msgid "[%1$s] Your site has updated to WordPress %2$s"
-msgstr "[%1$s] Deine Website wurde auf WordPress %2$s aktualisiert"
+msgstr "[%1$s] Deine Website wurde auf WordPress %2$s aktualisiert"
 
 #. translators: %s: Project name (plugin, theme, or WordPress).
 #: wp-admin/includes/class-wp-automatic-updater.php:438
@@ -15313,7 +15313,7 @@ msgstr "Mit Bild verlinken:"
 
 #: wp-admin/includes/media.php:2954
 msgid "Image Caption"
-msgstr "Untertitel des Bilds"
+msgstr "Bildbeschriftung"
 
 #: wp-admin/includes/media.php:2907
 msgid "Filter &#187;"
@@ -15762,7 +15762,7 @@ msgstr "Kommentar zurückweisen"
 #: wp-admin/includes/class-wp-comments-list-table.php:791
 #: wp-admin/includes/dashboard.php:751
 msgid "Approve this comment"
-msgstr "Diesen Kommentar freigeben"
+msgstr "Kommentar freigeben"
 
 #: wp-admin/includes/dashboard.php:210
 msgid "Configure"
@@ -15800,7 +15800,7 @@ msgstr "Zurück zur Theme-Installation"
 #: wp-admin/includes/class-wp-posts-list-table.php:1550
 #: wp-admin/includes/class-wp-theme-install-list-table.php:286
 msgid "Preview &#8220;%s&#8221;"
-msgstr "„%s“ anzeigen"
+msgstr "Vorschau von „%s“ anzeigen"
 
 #. translators: 1: Theme name, 2: Theme version.
 #: wp-admin/includes/class-theme-upgrader.php:84
@@ -15891,12 +15891,12 @@ msgstr "Das Plugin ist auf dem neuesten Stand."
 #: wp-admin/includes/class-wp-upgrader.php:210
 #: wp-admin/includes/update-core.php:1511
 msgid "Disabling Maintenance mode&#8230;"
-msgstr "Abschalten des Wartungsmodus &#8230;"
+msgstr "Wartungsmodus wird deaktiviert …"
 
 #: wp-admin/includes/class-wp-upgrader.php:209
 #: wp-admin/includes/update-core.php:1362
 msgid "Enabling Maintenance mode&#8230;"
-msgstr "Anschalten des Wartungsmodus &#8230;"
+msgstr "Wartungsmodus wird aktiviert …"
 
 #: wp-admin/includes/class-file-upload-upgrader.php:82
 #: wp-admin/includes/class-file-upload-upgrader.php:91
