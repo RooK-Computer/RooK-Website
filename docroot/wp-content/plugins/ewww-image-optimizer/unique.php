@@ -545,7 +545,7 @@ function ewww_image_optimizer( $file, $gallery_type = 4, $converted = false, $ne
 					$optipng_level = (int) ewww_image_optimizer_get_option( 'ewww_image_optimizer_optipng_level' );
 					if (
 						ewww_image_optimizer_get_option( 'ewww_image_optimizer_metadata_remove' ) &&
-						preg_match( '/0.7/', ewwwio()->local->test_binary( $tools['optipng'], 'optipng' ) ) &&
+						preg_match( '/(0\.7\.\d|7\.\d\.\d)/', ewwwio()->local->test_binary( $tools['optipng'], 'optipng' ) ) &&
 						! $keep_metadata
 					) {
 						$strip = '-strip all ';
@@ -755,7 +755,7 @@ function ewww_image_optimizer( $file, $gallery_type = 4, $converted = false, $ne
 					$strip         = '';
 					if (
 						ewww_image_optimizer_get_option( 'ewww_image_optimizer_metadata_remove' ) &&
-						preg_match( '/0.7/', ewwwio()->local->test_binary( $tools['optipng'], 'optipng' ) ) &&
+						preg_match( '/(0\.7\.\d|7\.\d\.\d)/', ewwwio()->local->test_binary( $tools['optipng'], 'optipng' ) ) &&
 						! $keep_metadata
 					) {
 						$strip = '-strip all ';
@@ -1056,7 +1056,7 @@ function ewww_image_optimizer( $file, $gallery_type = 4, $converted = false, $ne
 					$optipng_level = (int) ewww_image_optimizer_get_option( 'ewww_image_optimizer_optipng_level' );
 					if (
 						ewww_image_optimizer_get_option( 'ewww_image_optimizer_metadata_remove' ) &&
-						preg_match( '/0.7/', ewwwio()->local->test_binary( $tools['optipng'], 'optipng' ) ) &&
+						preg_match( '/(0\.7\.\d|7\.\d\.\d)/', ewwwio()->local->test_binary( $tools['optipng'], 'optipng' ) ) &&
 						! $keep_metadata
 					) {
 						$strip = '-strip all ';
@@ -1402,6 +1402,7 @@ function ewww_image_optimizer_webp_create( $file, $orig_size, $type, $tool, $rec
 		ewww_image_optimizer_update_webp_results( $file, 0, 4 );
 		return ewww_image_optimizer_webp_error_message( 4 );
 	}
+	add_filter( 'ewwwio_editor_prevent_overwrite', '__return_false' );
 	if ( empty( $tool ) || 'image/gif' === $type ) {
 		$use_cloud_webp = false;
 		if ( ewww_image_optimizer_get_option( 'ewww_image_optimizer_cloud_key' ) ) {
@@ -1572,8 +1573,7 @@ function ewww_image_optimizer_install_pngout_wrapper() {
 	}
 	$sendback = ewww_image_optimizer_install_pngout();
 	wp_safe_redirect( $sendback );
-	ewwwio_memory( __FUNCTION__ );
-	exit( 0 );
+	exit;
 }
 
 /**
@@ -1739,8 +1739,7 @@ function ewww_image_optimizer_install_svgcleaner_wrapper() {
 	}
 	$sendback = ewww_image_optimizer_install_svgcleaner();
 	wp_safe_redirect( $sendback );
-	ewwwio_memory( __FUNCTION__ );
-	exit( 0 );
+	exit;
 }
 
 /**
